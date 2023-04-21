@@ -143,7 +143,7 @@ async function main() {
     instancedBoxes.bodies = [];
     instancedBoxes.castShadow = true;
     instancedBoxes.receiveShadow = true;
-    for (let i = 0; i < 5000; i++) {
+    for (let i = 0; i < 10000; i++) {
         instancedBoxes.setColorAt(i, new THREE.Color(Math.random(), Math.random(), Math.random()));
         const boxBody = createBoxBody(new THREE.Vector3(Math.random() * 50 - 25, Math.random() * 100 + 50, Math.random() * 50 - 25), new THREE.Vector3(Math.random() * Math.PI * 2, Math.random() * Math.PI * 2, Math.random() * Math.PI * 2), new THREE.Vector3(2, 2, 2), "DYNAMIC", false);
         instancedBoxes.bodies.push(boxBody);
